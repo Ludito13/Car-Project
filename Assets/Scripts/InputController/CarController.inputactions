@@ -1,0 +1,224 @@
+{
+    "name": "CarController",
+    "maps": [
+        {
+            "name": "Car",
+            "id": "6c4bd62a-3911-44e6-9485-13b12e5d4ea8",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "f9f8bb2e-1e55-46ff-b15b-6aa783de5772",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Claxon",
+                    "type": "Value",
+                    "id": "f3cec8f1-79d9-4167-bc9d-17c6b145da5d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Acceleration",
+                    "type": "Button",
+                    "id": "ed279afe-48cb-4339-b40d-f73723ea7d20",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Break",
+                    "type": "Button",
+                    "id": "8d633385-4e9a-4dd9-ac35-1a4eb4bc3b5b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Changes negative",
+                    "type": "Button",
+                    "id": "913f34f6-6e6e-41bb-811b-35ac36e5ee5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Changes Positive",
+                    "type": "Button",
+                    "id": "d3a7fd8b-204b-423e-85a7-80ff44e71750",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "2e02cede-b619-4716-8c98-8d68d4ee7aa6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Break 2",
+                    "type": "Button",
+                    "id": "89b628ca-a788-4f1d-96b5-f5877ebc6b44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7aabcb73-4fa1-4ca1-bf7b-f621125e6656",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14c0c5da-fa19-4c02-be3b-afcb7a3ee210",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Claxon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed3d7971-7f53-46af-88c2-245d57317cbc",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Acceleration",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "75b04621-4403-4ef6-a6d1-2f956cb8b6a5",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Break",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a35988bb-1d5c-479c-992b-75032c45ff21",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Changes negative",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7c54913-d020-47aa-80e6-1d68ac1c0afa",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Changes Positive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "b6ee33ed-611c-4b6a-96db-7c818952b2c8",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "170f4e20-74cc-41d1-a397-5c128b12e28b",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "cd1b594c-3564-460d-951e-f9025d480dcf",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "622ce7c1-f875-4eee-90a2-f35d8e84b7e5",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "caec1cef-2f61-409c-a6e5-a19998c4c395",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "95cca6ab-2ee2-4fa3-ba00-56f5b3dcaad1",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Car",
+                    "action": "Break 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Car",
+            "bindingGroup": "Car",
+            "devices": []
+        }
+    ]
+}
